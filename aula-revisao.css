@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding: 0; 
+    margin: 0;
+    list-style: none;
+    font-family: "PT Serif", serif;
+}
+
+header {
+    padding: 30px;
+    background-color: #35777d;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header div i {
+    color: white;
+    font-size: 50px;
+}
+
+header div nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+
+header div nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+header div nav ul li a:hover {
+    color: deeppink;
+    transition: 0.6s;
+}
+
+/* Estilização section 01 */
+#section-01{
+    padding: 180px;
+    background-color: #28676d;
+}
+
+.div-imoveis div {
+    width: 200px;
+    height: 300px;
+    background-color: violet;
+}
+
+/*  */
+.div-imoveis {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 35px;
+    margin-bottom: 30px;
+}
+
+.div-imoveis .div-01{
+    background-image: url(img/Imovel-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.div-imoveis .div-02{
+    background-image: url(img/Imovel-02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.div-imoveis .div-03{
+    background-image: url(img/Imovel-03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.div-imoveis .div-04{
+    background-image: url(img/Imovel-04.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.div-imoveis .div-05{
+    background-image: url(img/Imovel-05.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.div-imoveis .div-06{
+    background-image: url(img/Imovel-06.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* Fim da sessão */
+
+/* Inicio section 02 */
+
+#section-02 {
+    padding: 180px;
+    background-image: url(img/Imovel-01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#section-02 div {
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 15px;
+}
+/* Fim da section-02 */
+
+/* Inicio da section-03 */
+
+#section-03 {
+    padding: 180px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#section-03 div {
+    width: 350px;
+    height: 300px;
+    padding: 25px;
+    background-color: white;
+}
+
+footer {
+    padding: 30px;
+    background-color: rgb(124, 68, 68);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div-list-footer i {
+    font-size: 50px;
+    color: white;
+}
+
+.div-sociais i {
+    background-color: rgb(158, 148, 148);
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.div-list-footer a {
+    text-decoration: none;
+    color: white;
+}
