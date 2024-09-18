@@ -1,0 +1,151 @@
+guia de unidades de medidas no css: quando usar cada um
+
+1. px (pixels)
+
+Para todo tamanho fixos e precisos que não
+
+
+
+3. rem (Relative to Root Front Size)
+
+Uso recomendado:
+
+Para criar tamanhos de fonte e espaçamentos
+consistentes em toda a aplicação, baseando-se 
+no tamanho da fonte raiz (<HTML>).
+
+Ideal para layouts e tipografia que precisam
+ser consistentes independentemente do tamanho da fonte dos elementos pais.
+
+Quando evitar:
+
+Quando voce quer um tamanho que seja relativo
+apenas ao elemento pai especifico e não a raiz
+
+Exemplo de uso:
+
+HTML
+
+<div class="text">
+
+    <p> Lorem </p>
+    </div>
+
+    </div>
+
+    css
+
+    html {
+        font-size: 16px; /* Tamanho base da fonte 
+        */
+    }
+
+    .text {
+        font-size:2rem; /* 32px (2 * 16px) */
+    }
+
+    4.vh (Viewport Height)
+
+    Uso recomendado:
+
+    Para definir tamanhos de altura relativos á
+    altura de Viewport, Como para criar seções de
+    tela cheia ou elementos que devem ocupar uma
+    Porcentagem de altura da tela.
+    Ideal para layouts que devem se ajustar á
+    altura da tela do usuario.
+
+    Quando evitar:
+
+    Para elementos que não precisam ser sensiveis
+    ao tamanho da Viewport e devem ter tamanhos
+    fixos ou proporcionais ao conteudo.
+
+    Exemplo de uso:
+
+    html
+
+    <section class="fullscreen-section">
+            <p>lorem</p>
+            <section>
+            testar em tamanhos de telas diferentes.
+
+            css
+
+            .fullscreen-section {
+                Height: 100vh; /* 100% da altura da Viewport */
+                width: 50vw
+                background-color: black;
+            }
+
+            5. vw (Viewport width)
+
+            Uso recomendado:
+
+            Para definir tamanhos de largura relativos á
+            largura da Viewport, útil para criar layouts
+            responsivos ou elementos que devem ajustar a
+            largura da tela.
+            Ideal para elementos que precisam ocupar uma
+            porcetagem de largura da tela do usuario.
+
+            Quando evitar:
+
+            Para elementos cuja largura não deve depender
+            da largura da Viewport e deve ser fixa ou
+            proporcional ao conteudo.
+
+            Exemplo de uso:
+
+            html
+            <section class=responsive-element">
+                     <p>lorem</p>
+            </section>
+
+            css
+
+            .responsive-element {
+                width: 50vw; /* 50% da largura da Viewport */
+                Height: 50vh;
+                background-color: yellow;
+            }         
+
+            6. % (Percentual)
+
+            Uso recomendado:
+
+            Para definir tamanhos relativos ao tamanho do 
+            elemento pai, ideal para layouts flexiveis e adaptaveis.
+            Ùtil para definir larguras e alturas de
+            elementos dentro de containers com tamanhos
+            variaveis.
+
+            Quando evitar:
+
+            Quando o tamanho não deve depender do 
+            elemento pai, especialmente se o elemento pai
+            não tiver um tamanho fixo ou previsivel.
+
+            Exemplo de uso: 
+
+            html
+            <div class="parent">
+            
+            <div class="child">
+            </div>
+
+           </div>
+
+
+           css
+
+           .parent {
+            width: 500px; /* LArgura fixa do pai */
+            background-color: green;
+           } 
+
+           .child {
+            width: 50%; /*50% da largura do elemento pai (250px
+            ) */
+            background-color: pink;
+           }

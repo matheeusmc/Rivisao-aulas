@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    padding: 30px;
+    background-color: #35777d;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-01 {
+    background-color: rgb(243, 0, 0);
+    padding: 90px;
+}
+
+.div-pai{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.div-pai div{
+    width: 250px;
+    height: 60px;
+    background-color: rgb(230, 240, 240);
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
